@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        gradlePluginPortal()
+        jcenter() // Warning: this repository is going to shut down soon
+        //融云 maven 仓库地址
+        maven { url "https://maven.rongcloud.cn/repository/maven-releases/" }
+    }
+}
+rootProject.name = "RTC Test"
+include ':app'
